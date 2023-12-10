@@ -19,7 +19,7 @@ public class NoviceStart {
         while (true) {
             // 1.5.0 版本开始可以直接利用 try-with-resources 特性
             try (Entry entry = SphU.entry("HelloWorld")) {
-                // 被保护的逻辑(被保护的资源))
+                // 被保护的逻辑(被保护的资源)
                 System.out.println("hello world");
             } catch (BlockException e) {
                 // 处理被流控的逻辑
